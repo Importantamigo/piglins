@@ -1,6 +1,6 @@
 # Aliucord Plugins
 
-Plugins for [Aliucord](https://aliucord.com/), the discord client mod for v126.1 of the Android Clien## Installation
+Plugins for [Aliucord](https://aliucord.com/), the discord client mod for v126.1 of the Android Client
 ## Installation
 1. Join the [Aliucord Discord Server](https://discord.gg/EsNDvBaHVU)
 2. Finish onboarding, open the `#plugins-list` channel
