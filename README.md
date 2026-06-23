@@ -9,7 +9,7 @@ Plugins for [Aliucord](https://aliucord.com/), the discord client mod for v126.1
 
 ## My shitty plugins (More coming soon)
 
-### [SilentIcons]()
+### [SilentIcons](https://github.com/Importantamigo/piglins/blob/builds/SilentIcon.zip)
 Adds the silent messages icon from DiscordRN
 
 #### Credits
