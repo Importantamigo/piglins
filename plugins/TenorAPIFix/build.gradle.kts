@@ -4,7 +4,7 @@ description = "Fixes the Tenor GIF search and trending API"
 aliucord {
     changelog.set(
         """
-        # 1.0.1
+        # 1.0.0
         * Initial plugin release
         """.trimIndent(),
     )
