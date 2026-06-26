@@ -4,7 +4,7 @@ Plugins for [Aliucord](https://aliucord.com/), the discord client mod for v126.1
 ## Installation
 1. Join the [Aliucord Discord Server](https://discord.gg/EsNDvBaHVU)
 2. Finish onboarding, open the `#plugins-list` channel
-3. Hold down a message with plugins, press "Open PluginDownloader" and install plugins
+3. Hold down a message with plugins, press "View [Plugin Dev]'s plugins" and install plugins
 4. Restart Aliucord
 
 ## My shitty plugins (More coming soon)
