@@ -1,9 +1,12 @@
-version = "1.0.0"
+version = "1.1.0"
 description = "Fixes the Tenor GIF search and trending API"
 
 aliucord {
     changelog.set(
         """
+        # 1.1.0
+        * fuckton of refactoring, should work more consistently
+        
         # 1.0.1
         * Initial plugin release
         """.trimIndent(),
@@ -21,5 +24,5 @@ aliucord {
 
     // Builds and deploys this plugin but excludes it from global plugin repositories.
     // Set this if the plugin has reached EOL but a last update should still occur.
-    deployHidden.set(true)
+    // deployHidden.set(true)
 }
