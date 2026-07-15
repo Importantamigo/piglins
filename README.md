@@ -17,3 +17,16 @@ Adds the silent messages icon from DiscordRN
 - [@secp192k1](https://github.com/secp192k1) for providing Silent Icon, testing and idea
 - [@rushiiMachine](https://github.com/rushiiMachine) and his plugin repo
 - [@Ushie](https://github.com/Ushie) for inspiration and drawable loading logic
+
+### [TenorAPIFix](https://github.com/Importantamigo/piglins/blob/builds/TenorAPIFix.zip)
+Fixes the tenor GIF API by fetching GIFs via a custom api key. Incompatible with [MoreGifProviders](https://github.com/mantikafasi/AliucordPlugins/raw/builds/MoreGifProviders.zip)
+
+ <b> Credits </b>
+- [@Aubrey](https://github.com/aubymori) for fixing the stupidest bug ever
+- [LunaScaped's Vencord Plugin](https://github.com/Lunascaped/tenorGifSearch) 
+
+### [HideMessageChatActions](https://github.com/Importantamigo/piglins/blob/builds/HideMessageChatActions)
+Hides specific actions from the message long-press menu.
+
+ <b> Credits </b>
+- [@FurqanHun](https://github.com/FurqanHun) for helping me with making this
