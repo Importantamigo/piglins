@@ -28,7 +28,7 @@ Fixes the tenor GIF API by fetching GIFs via a custom api key. Incompatible with
 
 ---
 
-### [HideMessageChatActions](https://github.com/Importantamigo/piglins/blob/builds/HideMessageChatActions)
+### [HideMessageChatActions](https://github.com/Importantamigo/piglins/blob/builds/HideMessageChatActions.zip)
 Hides specific actions from the message long-press menu.
 
  <b> Credits </b>
