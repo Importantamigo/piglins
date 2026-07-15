@@ -1,9 +1,12 @@
-version = "1.0.0"
+version = "1.1.0"
 description = "Hides specific actions from the message long-press menu."
 
 aliucord {
     changelog.set(
         """
+        # 1.1.0
+        * Sorts actions in the same order as the menu now
+        
         # 1.0.0
         * Initial release
         """.trimIndent(),

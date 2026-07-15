@@ -15,7 +15,7 @@ class HideMessageChatActionsSettings : SettingsPage() {
     companion object {
         lateinit var settings: SettingsAPI
 
-        val discoveredActions = mutableMapOf<String, String>()
+        val discoveredActions = LinkedHashMap<String, String>()
     }
 
     @SuppressLint("SetTextI18n")
@@ -38,18 +38,11 @@ class HideMessageChatActionsSettings : SettingsPage() {
             )
         }
 
-        discoveredActions.entries
-            .sortedWith(
-                compareBy(
-                    { it.key.endsWith("(Plugin)") },
-                    { it.key },
-                ),
-            )
-            .forEach { (displayLabel, key) ->
-                Utils.createCheckedSetting(ctx, CheckedSetting.ViewType.CHECK, displayLabel, null).apply {
-                    setOnCheckedListener { checked -> settings.setBool(key, checked) }
-                    isChecked = settings.getBool(key, false)
-                }.also { linearLayout.addView(it) }
-            }
+        discoveredActions.forEach { (displayLabel, key) ->
+            Utils.createCheckedSetting(ctx, CheckedSetting.ViewType.CHECK, displayLabel, null).apply {
+                setOnCheckedListener { checked -> settings.setBool(key, checked) }
+                isChecked = settings.getBool(key, false)
+            }.also { linearLayout.addView(it) }
+        }
     }
 }

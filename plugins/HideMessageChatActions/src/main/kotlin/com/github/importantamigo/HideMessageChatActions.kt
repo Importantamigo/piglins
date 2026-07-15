@@ -71,7 +71,7 @@ class HideMessageChatActions : Plugin() {
                             val label = extractText(child)?.trim() ?: continue
                             if (label.isEmpty()) continue
 
-                            val isDefault = defaultActions.keys.any { it.equals(label, ignoreCase = true) }
+                            val isDefault = label in defaultActions
                             if (!isDefault) {
                                 val displayLabel = "$label (Plugin)"
                                 HideMessageChatActionsSettings.discoveredActions[displayLabel] = label
