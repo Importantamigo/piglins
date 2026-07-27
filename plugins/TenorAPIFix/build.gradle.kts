@@ -4,6 +4,9 @@ description = "Fixes the Tenor GIF search and trending API"
 aliucord {
     changelog.set(
         """
+        # 1.1.1
+        * disabled some debug stuff that would flood logs
+            
         # 1.1.0
         * fuckton of refactoring, should work more consistently
         

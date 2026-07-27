@@ -117,7 +117,7 @@ class TenorAPIFix : Plugin() {
 
         val response = Http.Request(url, "GET").execute()
         val body = response.text()
-        logger.debug("Tenor $endpoint response: $body")
+        /*logger.debug("Tenor $endpoint response: $body")*/
 
         if (response.statusCode !in 200..299) {
             throw IOException("Tenor $endpoint request failed: ${response.statusCode} $body")
