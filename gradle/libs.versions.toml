@@ -4,11 +4,11 @@ aliucord-gradle = "2.3.0"
 #noinspection AndroidGradlePluginVersion
 android = "8.13.2"
 discord = "126021"
-kotlin = "2.3.0"
+kotlin = "2.4.10"
 #noinspection GradleDependency
 kotlin-stdlib = "1.5.21"
 ktlint = "1.8.0"
-ktlint-plugin = "14.0.1"
+ktlint-plugin = "14.2.0"
 
 [libraries]
 aliucord = { module = "com.aliucord:Aliucord", version.ref = "aliucord" }
