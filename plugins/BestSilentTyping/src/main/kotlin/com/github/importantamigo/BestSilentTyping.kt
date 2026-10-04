@@ -25,6 +25,14 @@ import com.lytefast.flexinput.widget.FlexEditText
 class BestSilentTyping : Plugin() {
     companion object {
         var promptUpdate: (() -> Unit)? = null
+
+        fun getToggleMessage(enabled: Boolean) = "Silent typing is now ${if (enabled) "enabled" else "disabled"}"
+
+        fun notifyToggle(showToast: Boolean, enabled: Boolean) {
+            if (showToast) {
+                Utils.showToast(getToggleMessage(enabled))
+            }
+        }
     }
 
     private var keyboardOn: Drawable? = null
@@ -71,7 +79,10 @@ class BestSilentTyping : Plugin() {
             }
             settings.setBool("silentTyping", newValue)
             updateIcon()
-            CommandsAPI.CommandResult("Silent typing is now ${if (newValue) "enabled" else "disabled"}", null, false)
+            
+            notifyToggle(settings.getBool("showToast", false), newValue)
+            
+            CommandsAPI.CommandResult(getToggleMessage(newValue), null, false)
         }
 
         patcher.before<StoreUserTyping>(
@@ -112,6 +123,7 @@ class BestSilentTyping : Plugin() {
                     val isSilent = settings.getBool("silentTyping", false)
                     settings.setBool("silentTyping", !isSilent)
                     updateIcon()
+                    notifyToggle(settings.getBool("showToast", false), !isSilent)
                 }
                 
                 val color = settings.getInt("iconColor", -1)

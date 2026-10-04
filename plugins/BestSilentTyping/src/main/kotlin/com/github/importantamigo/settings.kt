@@ -32,6 +32,7 @@ class BestSilentTypingSettings : SettingsPage() {
             isChecked = pluginSettings.getBool("silentTyping", false)
             setOnCheckedListener {
                 pluginSettings.setBool("silentTyping", it)
+                BestSilentTyping.notifyToggle(pluginSettings.getBool("showToast", false), it)
             }
         }.also { linearLayout.addView(it) }
 
@@ -44,6 +45,18 @@ class BestSilentTypingSettings : SettingsPage() {
             isChecked = pluginSettings.getBool("showToggle", true)
             setOnCheckedListener {
                 pluginSettings.setBool("showToggle", it)
+            }
+        }.also { linearLayout.addView(it) }
+
+        Utils.createCheckedSetting(
+            ctx,
+            CheckedSetting.ViewType.SWITCH,
+            "Show Toast on Toggle",
+            "Show a toast notification when silent typing is toggled"
+        ).apply {
+            isChecked = pluginSettings.getBool("showToast", false)
+            setOnCheckedListener {
+                pluginSettings.setBool("showToast", it)
             }
         }.also { linearLayout.addView(it) }
 

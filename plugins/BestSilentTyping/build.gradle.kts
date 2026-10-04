@@ -1,9 +1,12 @@
-version = "1.0.0"
+version = "1.1.0"
 description = "Hides typing indicator"
 
 aliucord {
     changelog.set(
         """
+        #1.1.0
+        *Added a toggle to show a toast on toggle
+        
         # 1.0.0
         * Initial release
         """.trimIndent(),
